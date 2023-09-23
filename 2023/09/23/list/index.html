@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>list | 洪源路36号的故事</title>
+        <meta name="author" content="纺凪未来" />
+        <meta name="description" content="推荐使用电脑浏览器以获得最佳体验" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="icon" href="/images/avatar.png" />
+        <script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="/css/fonts.min.css" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://cdn.staticfile.org/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdn.staticfile.org/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.8.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+<script src="https://cdn.staticfile.org/KaTeX/0.16.8/katex.min.js"></script>
+<script src="https://cdn.staticfile.org/KaTeX/0.16.8/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.16.8/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div id="layout">
+            <transition name="fade">
+                <div id="loading" v-show="loading">
+                    <div id="loading-circle">
+                        <h2>LOADING</h2>
+                        <p>加载过慢请开启缓存 浏览器默认开启</p>
+                        <img src="/images/loading.gif" />
+                    </div>
+                </div>
+            </transition>
+            <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>洪源路36号的故事</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;洪源路36号的故事</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+            <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+                <div class="article">
+    <div>
+        <h1>list</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/9/23
+        </span>
+        
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <p><strong>不同的主题列表：</strong></p>
+<span id="more"></span>
+
+<p>01<a href="/2023/09/23/01/" title="🗣自由讨论畅所欲言">🗣自由讨论畅所欲言</a></p>
+<p>02<a href="/2023/09/23/02/" title="🍜和顺最喜欢吃什么">🍜和顺最喜欢吃什么</a></p>
+<p>03<a href="/2023/09/23/03/" title="🎧好奇各位竞赛党的心路历程">🎧好奇各位竞赛党的心路历程</a></p>
+<p>04<a href="/2023/09/23/04/" title="💫有无艺考党、艺术人，来聊聊心路历程">💫有无艺考党、艺术人，来聊聊心路历程</a></p>
+<p>05<a href="/2023/09/23/05/" title="🤔来聊聊师附你记忆最深的地方叭">🤔来聊聊师附你记忆最深的地方叭</a></p>
+<p>06<a href="/2023/09/23/06/" title="👀留下坐标，大家都在干啥">👀留下坐标，大家都在干啥</a></p>
+<p>07<a href="/2023/09/23/07/" title="🎧在附中印象最深的一首歌">🎧在附中印象最深的一首歌</a></p>
+<p>08<a href="/2023/09/23/08/" title="👩🏻‍🏫老师榜：说说你和老师们的故事吧">👩🏻‍🏫老师榜：说说你和老师们的故事吧</a></p>
+<p>09<a href="/2023/09/23/09/" title="🎆四大青春和梦想启航">🎆四大青春和梦想启航</a></p>
+<p>10<a href="/2023/09/23/10/" title="🥄这楼留一下食堂招牌菜吧">🥄这楼留一下食堂招牌菜吧</a></p>
+<p>11<a href="/2023/09/23/11/" title="🍕食堂三楼啥好吃？">🍕食堂三楼啥好吃？</a></p>
+<p>12<a href="/2023/09/23/12/" title="💓说说高中喜欢的人吧">💓说说高中喜欢的人吧</a></p>
+<p>13<a href="/2023/09/23/13/" title="🥳运动会和社团义卖有什么样的体验">🥳运动会和社团义卖有什么样的体验</a></p>
+<p>14<a href="/2023/09/23/14/" title="🌇在师附看过的晚霞">🌇在师附看过的晚霞</a></p>
+<p>15<a href="/2023/09/23/15/" title="👂晚自习趣事">👂晚自习趣事</a></p>
+<p>16<a href="/2023/09/23/16/" title="📖考研集合楼！">📖考研集合楼！</a></p>
+<p>17<a href="/2023/09/23/17/" title="🍜还记得学校附近有啥好吃的吗？（关掉的也算呜呜意难平）">🍜还记得学校附近有啥好吃的吗？（关掉的也算呜呜意难平）</a></p>
+<p>18<a href="/2023/09/23/18/" title="👥最喜欢的社团，在社团发生最有趣的事情">👥最喜欢的社团，在社团发生最有趣的事情</a></p>
+<p>19<a href="/2023/09/23/19/" title="🤫有什么后悔的事吗">🤫有什么后悔的事吗</a></p>
+<p>20<a href="/2023/09/23/20/" title="🌈Love is love">🌈Love is love</a></p>
+<p>21<a href="/2023/09/23/21/" title="👂那年和你在天台聊天的人现在在哪里">👂那年和你在天台聊天的人现在在哪里</a></p>
+<p>22<a href="/2023/09/23/22/" title="👥说一段在师附开始的爱情故事吧">👥说一段在师附开始的爱情故事吧</a></p>
+<p>23<a href="/2023/09/23/23/" title="🤯说说身边的神仙同学吧">🤯说说身边的神仙同学吧</a></p>
+<p>24<a href="/2023/09/23/24/" title="🤩毕业之后，还和同学们有联系嘛">🤩毕业之后，还和同学们有联系嘛</a></p>
+<p>25<a href="/2023/09/23/25/" title="⚽️球赛的时候有什么记忆深刻的事情吗？">⚽️球赛的时候有什么记忆深刻的事情吗？</a></p>
+<p>26<a href="/2023/09/23/26/" title="😊年味渐浓，大家拜个早年吧">😊年味渐浓，大家拜个早年吧</a></p>
+<p>27<a href="/2023/09/23/27/" title="🏫毕业后回去过学校吗？有发生什么有趣的事吗？">🏫毕业后回去过学校吗？有发生什么有趣的事吗？</a></p>
+<p>28<a href="/2023/09/23/28/" title="😀喂！现在的理想是什么，还在追梦吗？">😀喂！现在的理想是什么，还在追梦吗？</a></p>
+<p>29<a href="/2023/09/23/29/" title="👾👾大家寒假有几天！比惨大会开始！">👾👾大家寒假有几天！比惨大会开始！</a></p>
+<p>30<a href="/2023/09/23/30/" title="📢大家说说自己对社团招新的记忆吧">📢大家说说自己对社团招新的记忆吧</a></p>
+<p>31<a href="/2023/09/23/31/" title="💯讲讲当年的牛逼舍友都去了哪儿">💯讲讲当年的牛逼舍友都去了哪儿</a></p>
+<p>32<a href="/2023/09/23/32/" title="🧐大家现在读的是什么专业">🧐大家现在读的是什么专业</a></p>
+<p>33<a href="/2023/09/23/33/" title="✨还记得那年星空下的操场吗">✨还记得那年星空下的操场吗</a></p>
+<p>34<a href="/2023/09/23/34/" title="😺师附猫猫和你的故事">😺师附猫猫和你的故事</a></p>
+<p>35<a href="/2023/09/23/35/" title="👾师附之我有你没有">👾师附之我有你没有</a></p>
+<p>36<a href="/2023/09/23/36/" title="🎃社畜来唠会嗑吧👩🏻‍💻👨🏻‍💻">🎃社畜来唠会嗑吧👩🏻‍💻👨🏻‍💻</a></p>
+<p>37<a href="/2023/09/23/37/" title="👀高三停课在干啥？">👀高三停课在干啥？</a></p>
+<p>38<a href="/2023/09/23/38/" title="👂体育节有什么难忘的事情">👂体育节有什么难忘的事情</a></p>
+<p>39<a href="/2023/09/23/39/" title="🤡你收藏过的附中老师表情包">🤡你收藏过的附中老师表情包</a></p>
+<p>40<a href="/2023/09/23/40/" title="🤪 来点高中社死故事">🤪 来点高中社死故事</a></p>
+<p>41<a href="/2023/09/23/41/" title="🤩来寻找一些共同爱好者">🤩来寻找一些共同爱好者</a></p>
+<p>42<a href="/2023/09/23/42/" title="🌸新的一年，大家有什么愿望吗？">🌸新的一年，大家有什么愿望吗？</a></p>
+<p>43<a href="/2023/09/23/43/" title="📮 那些没说出口的话，在这里说吧">📮 那些没说出口的话，在这里说吧</a></p>
+<p>44<a href="/2023/09/23/44/" title="🎤留句话给在校的学弟学妹吧">🎤留句话给在校的学弟学妹吧</a></p>
+<p>45<a href="/2023/09/23/45/" title="😿离开了师附怎么找npy？">😿离开了师附怎么找npy？</a></p>
+<p>46<a href="/2023/09/23/46/" title="🍟回族食堂的炸洋芋好吃还是二楼普通食堂的炸洋芋好吃？">🍟回族食堂的炸洋芋好吃还是二楼普通食堂的炸洋芋好吃？</a></p>
+<p>47<a href="/2023/09/23/47/" title="🏊‍♀️在学海里游泳是什么感受？">🏊‍♀️在学海里游泳是什么感受？</a></p>
+<p>48<a href="/2023/09/23/48/" title="💙后悔没在师附谈一场校园恋爱！！！">💙后悔没在师附谈一场校园恋爱！！！</a></p>
+<p>49<a href="/2023/09/23/49/" title="💧足球场为什么又在浇水">💧足球场为什么又在浇水</a></p>
+<p>50<a href="/2023/09/23/50/" title="📖王宏伟老师的爱徒集合楼">📖王宏伟老师的爱徒集合楼</a></p>
+<p>51<a href="/2023/09/23/51/" title="📷师附光影">📷师附光影</a></p>
+<p>52<a href="/2023/09/23/52/" title="㊙️说一个只有你知道的关于附中的事">㊙️说一个只有你知道的关于附中的事</a></p>
+<p>53<a href="/2023/09/23/53/" title="🏀最深刻的球场记忆!">🏀最深刻的球场记忆!</a></p>
+<p>54<a href="/2023/09/23/54/" title="🧊你有什么遗憾吗？">🧊你有什么遗憾吗？</a></p>
+<p>55<a href="/2023/09/23/55/" title="😆留一下班级里面有趣的同学的故事！">😆留一下班级里面有趣的同学的故事！</a></p>
+<p>56<a href="/2023/09/23/56/" title="㊙️或许留下一个秘密">㊙️或许留下一个秘密</a></p>
+<p>57<a href="/2023/09/23/57/" title="😍有没有高中喜欢过但没有鼓起勇气表白的人，你们还有联系吗">😍有没有高中喜欢过但没有鼓起勇气表白的人，你们还有联系吗</a></p>
+<p>58<a href="/2023/09/23/58/" title="💔有在感情上伤害过你的人吗？（有 没有）">💔有在感情上伤害过你的人吗？（有 没有）</a></p>
+<p>59<a href="/2023/09/23/59/" title="👈如果能再回到师大附中，你有什么想做的事">👈如果能再回到师大附中，你有什么想做的事</a></p>
+<p>60<a href="/2023/09/23/60/" title="⛺️毕业的大家有跟关系不错的高中朋友的小群吗～都叫什么名字～">⛺️毕业的大家有跟关系不错的高中朋友的小群吗～都叫什么名字～</a></p>
+<p>61<a href="/2023/09/23/61/" title="⛳️当初的愿望实现了吗">⛳️当初的愿望实现了吗</a></p>
+<p>62<a href="/2023/09/23/62/" title="👤留下一个人的名字（可以是印象深刻的同学也可以是好朋友），或许还可以写一些话给ta">👤留下一个人的名字（可以是印象深刻的同学也可以是好朋友），或许还可以写一些话给ta</a></p>
+<p>63<a href="/2023/09/23/63/" title="🌼附中老师说过哪些让你难忘的话语？">🌼附中老师说过哪些让你难忘的话语？</a></p>
+<p>64<a href="/2023/09/23/64/" title="💕你们还在一起吗？">💕你们还在一起吗？</a></p>
+<p>65<a href="/2023/09/23/65/" title="☣️在附中干过什么疯狂的事">☣️在附中干过什么疯狂的事</a></p>
+<p>66<a href="/2023/09/23/66/" title="🤍在附中只属于你的角落">🤍在附中只属于你的角落</a></p>
+<p>67<a href="/2023/09/23/67/" title="🚩在附中留下的一丝印子">🚩在附中留下的一丝印子</a></p>
+<p>68<a href="/2023/09/23/68/" title="🌲为已经从SF走出去的带学生们开个树洞吧，如果在大学没有合适的倾诉对象，可以在这里留言发泄一下呀（注意文明用语哟）">🌲为已经从SF走出去的带学生们开个树洞吧，如果在大学没有合适的倾诉对象，可以在这里留言发泄一下呀（注意文明用语哟）</a></p>
+<p>69<a href="/2023/09/23/69/" title="🏠宿舍生活">🏠宿舍生活</a></p>
+<p>70<a href="/2023/09/23/70/" title="🌲为文科生推荐一些专业或者壁垒">🌲为文科生推荐一些专业或者壁垒</a></p>
+<p>71<a href="/2023/09/23/71/" title="🎊聊聊话剧节吧">🎊聊聊话剧节吧</a></p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+                <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2023 - 2023 洪源路36号的故事
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;纺凪未来
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+            </div>
+            
+            <transition name="fade">
+                <div id="preview" ref="preview" v-show="previewShow">
+                    <img id="preview-content" ref="previewContent" />
+                </div>
+            </transition>
+            
+        </div>
+        <script src="/js/main.js"></script>
+        
+        
+
+
+
+
+        
+    </body>
+</html>

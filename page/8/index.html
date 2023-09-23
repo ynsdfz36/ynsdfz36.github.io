@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>洪源路36号的故事</title>
+        <meta name="author" content="纺凪未来" />
+        <meta name="description" content="推荐使用电脑浏览器以获得最佳体验" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="icon" href="/images/avatar.png" />
+        <script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="/css/fonts.min.css" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://cdn.staticfile.org/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdn.staticfile.org/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.8.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+<script src="https://cdn.staticfile.org/KaTeX/0.16.8/katex.min.js"></script>
+<script src="https://cdn.staticfile.org/KaTeX/0.16.8/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.16.8/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+<script src="/js/lib/home.js"></script>
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div id="layout">
+            <transition name="fade">
+                <div id="loading" v-show="loading">
+                    <div id="loading-circle">
+                        <h2>LOADING</h2>
+                        <p>加载过慢请开启缓存 浏览器默认开启</p>
+                        <img src="/images/loading.gif" />
+                    </div>
+                </div>
+            </transition>
+            <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>洪源路36号的故事</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;洪源路36号的故事</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+            <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+                <div id="home-head">
+    <div id="home-background" ref="homeBackground" data-images="/images/background.png"></div>
+    <div id="home-info" @click="homeClick">
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="info">
+            <div class="wrap">
+                <h1>洪源路36号的故事</h1>
+                <h3>我们在过去的梦境中相遇 我们在未来的现实里重逢</h3>
+                <h5>推荐使用电脑浏览器以获得最佳体验</h5>
+            </div>
+        </span>
+    </div>
+</div>
+<div id="home-posts-wrap" true ref="homePostsWrap">
+    <div id="home-posts">
+        
+
+<div class="post">
+    <a href="/2023/09/23/04/">
+        <h2 class="post-title">💫有无艺考党、艺术人，来聊聊心路历程</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/9/23
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+        
+    </div>
+    <a href="/2023/09/23/04/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/09/23/03/">
+        <h2 class="post-title">🎧好奇各位竞赛党的心路历程</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/9/23
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+        
+    </div>
+    <a href="/2023/09/23/03/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/09/23/02/">
+        <h2 class="post-title">🍜和顺最喜欢吃什么</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/9/23
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+        
+    </div>
+    <a href="/2023/09/23/02/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/09/23/01/">
+        <h2 class="post-title">🗣自由讨论畅所欲言</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/9/23
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+        
+    </div>
+    <a href="/2023/09/23/01/" class="go-post">阅读全文</a>
+</div>
+
+
+        <div class="page-current">
+    
+    <a class="page-num" href="/page/7/">
+        <i class="fa-solid fa-caret-left fa-fw"></i>
+    </a>
+    <a class="page-num" href="/">1</a>
+    <span class="page-omit">...</span>
+    
+    <span class="current">8</span>
+    
+    
+    
+    
+</div>
+
+    </div>
+    
+    <div id="home-card">
+        <div id="card-style">
+    <div id="card-div">
+        <div class="avatar">
+            <img src="/images/avatar.png" alt="avatar" />
+        </div>
+        <div class="name">纺凪未来</div>
+        <div class="description">
+            <p>人会忘记重要的事情<br>但你把它写在网页上就不会忘记了()</p>
+
+        </div>
+        
+        <div class="icon-links">
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://github.com/HopeLilaS/HopeLilaS.github.io">
+                    <i
+                        class="fa-brands fa-github fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://space.bilibili.com/650402213/bangumi">
+                    <i
+                        class="fa-brands fa-bilibili fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+            <span class="icon-link">
+                <a href="mailto:hopelilas@outlook.com">
+                    <i
+                        class="fa-solid fa-envelope fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+        </div>
+        
+        
+        <div class="friend-links">
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="http://map.suours.com/">蹭饭地图</a>
+            </div>
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="http://suours.com/">学生会网络部</a>
+            </div>
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://www.ynsdfz.net/">师大附中官网</a>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+    </div>
+    
+</div>
+
+                <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2023 - 2023 洪源路36号的故事
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;纺凪未来
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+            </div>
+            
+            <transition name="fade">
+                <div id="preview" ref="preview" v-show="previewShow">
+                    <img id="preview-content" ref="previewContent" />
+                </div>
+            </transition>
+            
+        </div>
+        <script src="/js/main.js"></script>
+        
+    </body>
+</html>
