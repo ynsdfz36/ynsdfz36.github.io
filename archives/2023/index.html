@@ -3,8 +3,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Archives | 纺凪未来</title>
-        <meta name="author" content="Tsumugi Mirai" />
+        <title>Archives | 洪源路36号的故事</title>
+        <meta name="author" content="纺凪未来" />
         <meta name="description" content="推荐使用电脑浏览器以获得最佳体验" />
         <meta name="keywords" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -55,7 +55,7 @@
             <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>纺凪未来</span>
+            <span>洪源路36号的故事</span>
         </a>
         
         <a href="/">
@@ -87,7 +87,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;纺凪未来</span>
+            <span>&emsp;洪源路36号的故事</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -151,15 +151,37 @@
     
     <div id="timeline-wrap" ref="timeline">
         
-        <div class="timeline" data-title="helloworld">
+        <div class="timeline" data-title="关于这个网页">
             <div class="timeline-tail"></div>
             <div class="timeline-content">
                 <div class="item-time">2023/9/23</div>
-                <a href="/2023/09/23/hello-world/">
-                    <h3>Hello World</h3>
+                <a href="/2023/09/23/iii/">
+                    <h3>关于这个网页</h3>
                 </a>
                 <div class="info">
                     
+                    <span class="category">
+                        <a href="/categories/%E7%AE%A1%E7%90%86%E5%91%98%E5%B8%96%E5%AD%90/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            管理员帖子
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/main/" style="color: #00bcd4">main</a>
+                        </span>
+                        
+                    </span>
                     
                 </div>
             </div>
@@ -172,11 +194,11 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2023 - 2023 纺凪未来
+            2023 - 2023 洪源路36号的故事
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
-            &commat;Tsumugi Mirai
+            &commat;纺凪未来
         </div>
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
