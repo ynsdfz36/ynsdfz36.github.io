@@ -44,6 +44,7 @@
 
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body>
+        <div id="background"></div>
         <div id="layout">
             <transition name="fade">
                 <div id="loading" v-show="loading">
@@ -149,7 +150,7 @@
 
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
                 <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background.png"></div>
+    <div id="home-background" ref="homeBackground" data-images="/images/background.jpg"></div>
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
         <span class="loop"></span>
