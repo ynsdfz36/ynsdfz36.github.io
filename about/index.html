@@ -39,6 +39,10 @@
 
 
 
+<script src="https://cdn.staticfile.org/waline/2.15.5/waline.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/waline/2.15.5/waline.min.css" />
+<link rel="stylesheet" href="https://cdn.staticfile.org/waline/2.15.5/waline-meta.min.css" />
+
 
 
 
@@ -177,7 +181,7 @@
 </tr>
 <tr>
 <td><strong>mail</strong></td>
-<td><a href="mailto:&#104;&#x6f;&#x70;&#x65;&#108;&#x69;&#108;&#x61;&#115;&#64;&#x6f;&#117;&#116;&#x6c;&#x6f;&#111;&#107;&#x2e;&#99;&#x6f;&#x6d;">&#104;&#x6f;&#x70;&#x65;&#108;&#x69;&#108;&#x61;&#115;&#64;&#x6f;&#117;&#116;&#x6c;&#x6f;&#111;&#107;&#x2e;&#99;&#x6f;&#x6d;</a></td>
+<td><a href="mailto:&#x68;&#111;&#112;&#x65;&#x6c;&#x69;&#108;&#x61;&#115;&#x40;&#111;&#117;&#x74;&#108;&#x6f;&#x6f;&#x6b;&#x2e;&#x63;&#x6f;&#109;">&#x68;&#111;&#112;&#x65;&#x6c;&#x69;&#108;&#x61;&#115;&#x40;&#111;&#117;&#x74;&#108;&#x6f;&#x6f;&#x6b;&#x2e;&#x63;&#x6f;&#109;</a></td>
 </tr>
 <tr>
 <td><strong>GitHub</strong></td>
@@ -201,6 +205,10 @@
     
     
     
+    
+    <div id="comment">
+        <div id="waline-container"></div>
+    </div>
     
     
     
@@ -241,6 +249,23 @@
         
         
 
+
+<script>
+    Waline.init({
+        el: "#waline-container",
+        serverURL: "https://ynsdfz-ava8zhnse-hopelilas.vercel.app/",
+        commentCount: true,
+        pageview: false,
+        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
+        meta: "nick,mail,link".split(","),
+        requiredMeta: "nick".split(","),
+        lang: "zh-CN",
+        wordLimit: 0,
+        pageSize: "10",
+        login: "enable",
+        
+    });
+</script>
 
 
 

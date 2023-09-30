@@ -39,6 +39,10 @@
 
 
 
+<script src="https://cdn.staticfile.org/waline/2.15.5/waline.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/waline/2.15.5/waline.min.css" />
+<link rel="stylesheet" href="https://cdn.staticfile.org/waline/2.15.5/waline-meta.min.css" />
+
 
 
 
@@ -173,7 +177,7 @@
 </ul>
 <p>联系方式：</p>
 <p>QQ：3330434793</p>
-<p>Email：<a href="mailto:&#x68;&#x6f;&#x70;&#x65;&#x6c;&#x69;&#x6c;&#97;&#x73;&#x40;&#x6f;&#117;&#116;&#108;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;">&#x68;&#x6f;&#x70;&#x65;&#x6c;&#x69;&#x6c;&#97;&#x73;&#x40;&#x6f;&#117;&#116;&#108;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>Email：<a href="mailto:&#104;&#x6f;&#x70;&#x65;&#x6c;&#x69;&#108;&#97;&#x73;&#64;&#111;&#117;&#116;&#x6c;&#x6f;&#x6f;&#x6b;&#46;&#x63;&#111;&#x6d;">&#104;&#x6f;&#x70;&#x65;&#x6c;&#x69;&#108;&#97;&#x73;&#64;&#111;&#117;&#116;&#x6c;&#x6f;&#x6f;&#x6b;&#46;&#x63;&#111;&#x6d;</a></p>
 <h2 id="⁉️意见贴"><a href="#⁉️意见贴" class="headerlink" title="⁉️意见贴"></a>⁉️意见贴</h2><p>对我们有意见？</p>
 <p>欢迎通过上面的方式联系我们！</p>
 <p>或者在本帖的评论区留下您的意见，我们会定期查看。</p>
@@ -183,6 +187,10 @@
     
     
     
+    
+    <div id="comment">
+        <div id="waline-container"></div>
+    </div>
     
     
     
@@ -223,6 +231,23 @@
         
         
 
+
+<script>
+    Waline.init({
+        el: "#waline-container",
+        serverURL: "https://ynsdfz-ava8zhnse-hopelilas.vercel.app/",
+        commentCount: true,
+        pageview: false,
+        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
+        meta: "nick,mail,link".split(","),
+        requiredMeta: "nick".split(","),
+        lang: "zh-CN",
+        wordLimit: 0,
+        pageSize: "10",
+        login: "enable",
+        
+    });
+</script>
 
 
 
